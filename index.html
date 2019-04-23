@@ -7,7 +7,12 @@
     <title>Jason 2nd attempt</title>
 </head>
 <body>
+
+    <div id="button">Press Me</div>
+    <input type="text" id="firstName">
     <script>
+
+
        /* var tString = "Hello";
         var tString2 = 'Hello';
         var tNumber = 33;
@@ -41,7 +46,10 @@
         var sendData = JSON.stringify(myJSONparsed);
         console.log(sendData);      */
         
-
+        document.getElementById('button').addEventListener('click',addToStorage);
+        function addToStorage(){
+            console.log('Clicked');
+        }
 
         var myJSON = {"first": "Robsoon", "last":"Rydlewski"};  
         console.log(myJSON);
