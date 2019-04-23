@@ -48,7 +48,9 @@
         
         document.getElementById('button').addEventListener('click',addToStorage);
         function addToStorage(){
-            console.log('Clicked');
+            let tempValue = 
+                document.getElementById('firstName').value;
+            console.log('Clicked'+tempValue);
         }
 
         var myJSON = {"first": "Robsoon", "last":"Rydlewski"};  
